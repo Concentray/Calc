@@ -31,5 +31,12 @@ namespace Calculator
             ResultField.Text = (first - second).ToString();
         }
 
+        private void MultyOper_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(FirstField.Text);
+            double second = Convert.ToDouble(SecondField.Text);
+            ResultField.Text = (first * second).ToString();
+        }
+
     }
 }

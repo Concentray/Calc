@@ -55,6 +55,7 @@
             this.MultyOper.TabIndex = 1;
             this.MultyOper.Text = "*";
             this.MultyOper.UseVisualStyleBackColor = true;
+            this.MultyOper.Click += new System.EventHandler(this.MultyOper_Click);
             // 
             // MinusOper
             // 
