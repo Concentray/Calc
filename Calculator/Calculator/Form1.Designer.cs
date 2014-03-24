@@ -64,6 +64,7 @@
             this.MinusOper.TabIndex = 2;
             this.MinusOper.Text = "-";
             this.MinusOper.UseVisualStyleBackColor = true;
+            this.MinusOper.Click += new System.EventHandler(this.MinusOper_Click);
             // 
             // DivOper
             // 
