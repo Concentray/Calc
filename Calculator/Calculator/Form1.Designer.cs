@@ -75,6 +75,7 @@
             this.DivOper.TabIndex = 3;
             this.DivOper.Text = "/";
             this.DivOper.UseVisualStyleBackColor = true;
+            this.DivOper.Click += new System.EventHandler(this.DivOper_Click);
             // 
             // ResultField
             // 
