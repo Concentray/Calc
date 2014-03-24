@@ -21,7 +21,8 @@ namespace Calculator
         {
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
-            ResultField.Text = (first + second).ToString();
+            Adder adder = new Adder();
+            ResultField.Text = adder.Calculate(first, second).ToString();
         }
 
         private void MinusOper_Click(object sender, EventArgs e)
