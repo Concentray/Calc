@@ -28,88 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PlusOper = new System.Windows.Forms.Button();
+            this.MultyOper = new System.Windows.Forms.Button();
+            this.MinusOper = new System.Windows.Forms.Button();
+            this.DivOper = new System.Windows.Forms.Button();
+            this.ResultField = new System.Windows.Forms.TextBox();
+            this.SecondField = new System.Windows.Forms.TextBox();
+            this.FirstField = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // PlusOper
             // 
-            this.button1.Location = new System.Drawing.Point(30, 316);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.PlusOper.Location = new System.Drawing.Point(30, 316);
+            this.PlusOper.Name = "PlusOper";
+            this.PlusOper.Size = new System.Drawing.Size(75, 23);
+            this.PlusOper.TabIndex = 0;
+            this.PlusOper.Text = "+";
+            this.PlusOper.UseVisualStyleBackColor = true;
+            this.PlusOper.Click += new System.EventHandler(this.PlusOper_Click);
             // 
-            // button2
+            // MultyOper
             // 
-            this.button2.Location = new System.Drawing.Point(192, 316);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "*";
-            this.button2.UseVisualStyleBackColor = true;
+            this.MultyOper.Location = new System.Drawing.Point(192, 316);
+            this.MultyOper.Name = "MultyOper";
+            this.MultyOper.Size = new System.Drawing.Size(75, 23);
+            this.MultyOper.TabIndex = 1;
+            this.MultyOper.Text = "*";
+            this.MultyOper.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // MinusOper
             // 
-            this.button3.Location = new System.Drawing.Point(111, 316);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
+            this.MinusOper.Location = new System.Drawing.Point(111, 316);
+            this.MinusOper.Name = "MinusOper";
+            this.MinusOper.Size = new System.Drawing.Size(75, 23);
+            this.MinusOper.TabIndex = 2;
+            this.MinusOper.Text = "-";
+            this.MinusOper.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // DivOper
             // 
-            this.button4.Location = new System.Drawing.Point(273, 316);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "/";
-            this.button4.UseVisualStyleBackColor = true;
+            this.DivOper.Location = new System.Drawing.Point(273, 316);
+            this.DivOper.Name = "DivOper";
+            this.DivOper.Size = new System.Drawing.Size(75, 23);
+            this.DivOper.TabIndex = 3;
+            this.DivOper.Text = "/";
+            this.DivOper.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // ResultField
             // 
-            this.textBox1.Location = new System.Drawing.Point(242, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.ResultField.Location = new System.Drawing.Point(242, 151);
+            this.ResultField.Name = "ResultField";
+            this.ResultField.Size = new System.Drawing.Size(100, 20);
+            this.ResultField.TabIndex = 4;
             // 
-            // textBox2
+            // SecondField
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.SecondField.Location = new System.Drawing.Point(136, 151);
+            this.SecondField.Name = "SecondField";
+            this.SecondField.Size = new System.Drawing.Size(100, 20);
+            this.SecondField.TabIndex = 5;
             // 
-            // textBox3
+            // FirstField
             // 
-            this.textBox3.Location = new System.Drawing.Point(30, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.FirstField.Location = new System.Drawing.Point(30, 151);
+            this.FirstField.Name = "FirstField";
+            this.FirstField.Size = new System.Drawing.Size(100, 20);
+            this.FirstField.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 494);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.FirstField);
+            this.Controls.Add(this.SecondField);
+            this.Controls.Add(this.ResultField);
+            this.Controls.Add(this.DivOper);
+            this.Controls.Add(this.MinusOper);
+            this.Controls.Add(this.MultyOper);
+            this.Controls.Add(this.PlusOper);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,13 +116,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button PlusOper;
+        private System.Windows.Forms.Button MultyOper;
+        private System.Windows.Forms.Button MinusOper;
+        private System.Windows.Forms.Button DivOper;
+        private System.Windows.Forms.TextBox ResultField;
+        private System.Windows.Forms.TextBox SecondField;
+        private System.Windows.Forms.TextBox FirstField;
     }
 }
 

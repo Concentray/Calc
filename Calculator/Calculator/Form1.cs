@@ -16,15 +16,13 @@ namespace Calculator
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        
+        private void PlusOper_Click(object sender, EventArgs e)
         {
-
+            double first = Convert.ToDouble(FirstField.Text);
+            double second = Convert.ToDouble(SecondField.Text);
+            ResultField.Text = (first + second).ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
