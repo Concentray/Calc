@@ -17,40 +17,33 @@ namespace Calculator
         {
             InitializeComponent();
         }
-        
-        private void PlusOper_Click(object sender, EventArgs e)
+
+        private void BinaryCalculate(string calc)
         {
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
-            IBinaryOperation adder = BinaryOperationsFactory.CreateOperation("adder");
-            ResultField.Text = adder.Calculate(first, second).ToString();
+            IBinaryOperation calculator = BinaryOperationsFactory.CreateOperation(calc);
+            ResultField.Text = calculator.Calculate(first, second).ToString();
+        }
+    
+        private void PlusOper_Click(object sender, EventArgs e)
+        {
+            BinaryCalculate("adder");
         }
 
         private void MinusOper_Click(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(FirstField.Text);
-            double second = Convert.ToDouble(SecondField.Text);
-            ResultField.Text = (first - second).ToString();
-            IBinaryOperation substracter = BinaryOperationsFactory.CreateOperation("substracter");
-            ResultField.Text = substracter.Calculate(first, second).ToString();
+           BinaryCalculate("substracter");
         }
 
         private void MultyOper_Click(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(FirstField.Text);
-            double second = Convert.ToDouble(SecondField.Text);
-            ResultField.Text = (first * second).ToString();
-            IBinaryOperation multiplayer = BinaryOperationsFactory.CreateOperation("multiplayer");
-            ResultField.Text = multiplayer.Calculate(first, second).ToString();
+          BinaryCalculate("multiplayer");
         }
 
         private void DivOper_Click(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(FirstField.Text);
-            double second = Convert.ToDouble(SecondField.Text);
-            ResultField.Text = (first / second).ToString();
-            IBinaryOperation devider = BinaryOperationsFactory.CreateOperation("devider");
-            ResultField.Text = devider.Calculate(first, second).ToString();
+          BinaryCalculate("devider"); 
         }
 
     }
