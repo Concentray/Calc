@@ -13,4 +13,4 @@ namespace Calculator
            return first + second;
        }
    }
-}
+ }

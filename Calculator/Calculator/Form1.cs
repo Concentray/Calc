@@ -30,6 +30,8 @@ namespace Calculator
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
             ResultField.Text = (first - second).ToString();
+            Substracter substracter = new Substracter();
+            ResultField.Text = substracter.Calculate(first, second).ToString();
         }
 
         private void MultyOper_Click(object sender, EventArgs e)
@@ -37,6 +39,8 @@ namespace Calculator
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
             ResultField.Text = (first * second).ToString();
+            Multiplayer Multiplayer = new Multiplayer();
+            ResultField.Text = Multiplayer.Calculate(first, second).ToString();
         }
 
         private void DivOper_Click(object sender, EventArgs e)
@@ -44,6 +48,8 @@ namespace Calculator
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
             ResultField.Text = (first / second).ToString();
+            Devider Devider = new Devider();
+            ResultField.Text = Devider.Calculate(first, second).ToString();
         }
 
     }
