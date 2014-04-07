@@ -21,7 +21,7 @@ namespace Calculator
         {
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
-            Adder adder = new Adder();
+            IBinaryOperation adder = new Adder();
             ResultField.Text = adder.Calculate(first, second).ToString();
         }
 
@@ -30,7 +30,7 @@ namespace Calculator
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
             ResultField.Text = (first - second).ToString();
-            Substracter substracter = new Substracter();
+            IBinaryOperation substracter = new Substracter();
             ResultField.Text = substracter.Calculate(first, second).ToString();
         }
 
@@ -39,7 +39,7 @@ namespace Calculator
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
             ResultField.Text = (first * second).ToString();
-            Multiplayer Multiplayer = new Multiplayer();
+            IBinaryOperation Multiplayer = new Multiplayer();
             ResultField.Text = Multiplayer.Calculate(first, second).ToString();
         }
 
@@ -48,7 +48,7 @@ namespace Calculator
             double first = Convert.ToDouble(FirstField.Text);
             double second = Convert.ToDouble(SecondField.Text);
             ResultField.Text = (first / second).ToString();
-            Devider Devider = new Devider();
+            IBinaryOperation Devider = new Devider();
             ResultField.Text = Devider.Calculate(first, second).ToString();
         }
 

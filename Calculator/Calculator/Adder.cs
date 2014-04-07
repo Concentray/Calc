@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-   public class Adder
+    public class Adder : IBinaryOperation
    {
        public double Calculate(double first, double second)
        {

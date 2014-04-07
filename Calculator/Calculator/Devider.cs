@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    public class Devider
+    public class Devider : IBinaryOperation
     {
         public double Calculate(double first, double second)
         {

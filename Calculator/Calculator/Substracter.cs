@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    public class Substracter
+    public class Substracter : IBinaryOperation
     {
         public double Calculate(double first, double second)
         {
