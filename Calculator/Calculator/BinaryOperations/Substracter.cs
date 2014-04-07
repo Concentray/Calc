@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.BinaryOperations
 {
     public class Substracter : IBinaryOperation
     {
