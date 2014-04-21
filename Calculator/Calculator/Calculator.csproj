@@ -49,7 +49,6 @@
     <Compile Include="BinaryOperations\Devider.cs" />
     <Compile Include="BinaryOperations\pow.cs" />
     <Compile Include="BinaryOperations\power.cs" />
-    <Compile Include="BinaryOperations\sqr.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
