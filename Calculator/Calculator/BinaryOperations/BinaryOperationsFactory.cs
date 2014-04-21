@@ -17,9 +17,13 @@ namespace Calculator.BinaryOperations
                     return new Multiplayer();
                 case "devider":
                     return new Devider();
+                case "pow":
+                    return new pow();
+                case "power":
+                    return new power();
                 default:
                     throw new ArgumentException("Незивестный калькулятор","calc");
-            }
+                }
          }
 
     }

@@ -35,6 +35,9 @@
             this.ResultField = new System.Windows.Forms.TextBox();
             this.SecondField = new System.Windows.Forms.TextBox();
             this.FirstField = new System.Windows.Forms.TextBox();
+            this.pow = new System.Windows.Forms.Button();
+            this.power = new System.Windows.Forms.Button();
+            this.sqr = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusOper
@@ -98,11 +101,44 @@
             this.FirstField.Size = new System.Drawing.Size(100, 20);
             this.FirstField.TabIndex = 6;
             // 
+            // pow
+            // 
+            this.pow.Location = new System.Drawing.Point(29, 376);
+            this.pow.Name = "pow";
+            this.pow.Size = new System.Drawing.Size(75, 23);
+            this.pow.TabIndex = 7;
+            this.pow.Text = "x^y";
+            this.pow.UseVisualStyleBackColor = true;
+            this.pow.Click += new System.EventHandler(this.Pow_Click);
+            // 
+            // power
+            // 
+            this.power.Location = new System.Drawing.Point(110, 376);
+            this.power.Name = "power";
+            this.power.Size = new System.Drawing.Size(75, 23);
+            this.power.TabIndex = 8;
+            this.power.Text = "x^(1/y)";
+            this.power.UseVisualStyleBackColor = true;
+            this.power.Click += new System.EventHandler(this.power_Click);
+            // 
+            // sqr
+            // 
+            this.sqr.Location = new System.Drawing.Point(192, 376);
+            this.sqr.Name = "sqr";
+            this.sqr.Size = new System.Drawing.Size(75, 23);
+            this.sqr.TabIndex = 9;
+            this.sqr.Text = "x^2";
+            this.sqr.UseVisualStyleBackColor = true;
+            this.sqr.Click += new System.EventHandler(this.sqr_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 494);
+            this.Controls.Add(this.sqr);
+            this.Controls.Add(this.power);
+            this.Controls.Add(this.pow);
             this.Controls.Add(this.FirstField);
             this.Controls.Add(this.SecondField);
             this.Controls.Add(this.ResultField);
@@ -126,6 +162,9 @@
         private System.Windows.Forms.TextBox ResultField;
         private System.Windows.Forms.TextBox SecondField;
         private System.Windows.Forms.TextBox FirstField;
+        private System.Windows.Forms.Button pow;
+        private System.Windows.Forms.Button power;
+        private System.Windows.Forms.Button sqr;
     }
 }
 

@@ -47,6 +47,9 @@
     <Compile Include="BinaryOperations\Adder.cs" />
     <Compile Include="BinaryOperations\BinaryOperationsFactory.cs" />
     <Compile Include="BinaryOperations\Devider.cs" />
+    <Compile Include="BinaryOperations\pow.cs" />
+    <Compile Include="BinaryOperations\power.cs" />
+    <Compile Include="BinaryOperations\sqr.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +61,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinaryOperations\Substracter.cs" />
+    <Compile Include="SignleOperations\SingleOperationsFactory.cs" />
+    <Compile Include="SignleOperations\ISingleOperation.cs" />
+    <Compile Include="SignleOperations\sqr.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
