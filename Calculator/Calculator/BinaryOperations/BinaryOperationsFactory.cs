@@ -21,6 +21,10 @@ namespace Calculator.BinaryOperations
                     return new pow();
                 case "power":
                     return new power();
+                case "Percent":
+                    return new percent();
+                case "Log":
+                    return new log();
                 default:
                     throw new ArgumentException("Незивестный калькулятор","calc");
                 }

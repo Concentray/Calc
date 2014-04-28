@@ -41,6 +41,12 @@
             this.Cube = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
             this.lg = new System.Windows.Forms.Button();
+            this.Percent = new System.Windows.Forms.Button();
+            this.log = new System.Windows.Forms.Button();
+            this.ln = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusOper
@@ -164,11 +170,74 @@
             this.lg.UseVisualStyleBackColor = true;
             this.lg.Click += new System.EventHandler(this.lg_Click);
             // 
+            // Percent
+            // 
+            this.Percent.Location = new System.Drawing.Point(30, 266);
+            this.Percent.Name = "Percent";
+            this.Percent.Size = new System.Drawing.Size(75, 23);
+            this.Percent.TabIndex = 13;
+            this.Percent.Text = "%";
+            this.Percent.UseVisualStyleBackColor = true;
+            this.Percent.Click += new System.EventHandler(this.Percent_Click);
+            // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(111, 266);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(75, 23);
+            this.log.TabIndex = 14;
+            this.log.Text = "log";
+            this.log.UseVisualStyleBackColor = true;
+            this.log.Click += new System.EventHandler(this.log_Click);
+            // 
+            // ln
+            // 
+            this.ln.Location = new System.Drawing.Point(192, 266);
+            this.ln.Name = "ln";
+            this.ln.Size = new System.Drawing.Size(75, 23);
+            this.ln.TabIndex = 15;
+            this.ln.Text = "ln";
+            this.ln.UseVisualStyleBackColor = true;
+            this.ln.Click += new System.EventHandler(this.ln_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(273, 266);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(191, 426);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(272, 425);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 494);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ln);
+            this.Controls.Add(this.log);
+            this.Controls.Add(this.Percent);
             this.Controls.Add(this.lg);
             this.Controls.Add(this.sqrt);
             this.Controls.Add(this.Cube);
@@ -204,6 +273,12 @@
         private System.Windows.Forms.Button Cube;
         private System.Windows.Forms.Button sqrt;
         private System.Windows.Forms.Button lg;
+        private System.Windows.Forms.Button Percent;
+        private System.Windows.Forms.Button log;
+        private System.Windows.Forms.Button ln;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

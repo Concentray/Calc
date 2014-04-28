@@ -18,6 +18,8 @@ namespace Calculator.SignleOperations
                     return new sqrt();
                 case"lg":
                     return new lg();
+                case "ln":
+                    return new ln();
                 default:
                     throw new ArgumentException("Незивестный калькулятор","calc");
                 }
