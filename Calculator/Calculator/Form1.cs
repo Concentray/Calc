@@ -68,5 +68,20 @@ namespace Calculator
             SignleCalculate("sqr");
         }
 
+        private void Cube_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("cube");
+        }
+
+        private void sqrt_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("sqrt");
+        }
+
+        private void lg_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("lg");
+        }
+
     }
 }

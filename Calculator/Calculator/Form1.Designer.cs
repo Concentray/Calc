@@ -38,6 +38,9 @@
             this.pow = new System.Windows.Forms.Button();
             this.power = new System.Windows.Forms.Button();
             this.sqr = new System.Windows.Forms.Button();
+            this.Cube = new System.Windows.Forms.Button();
+            this.sqrt = new System.Windows.Forms.Button();
+            this.lg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusOper
@@ -131,11 +134,44 @@
             this.sqr.UseVisualStyleBackColor = true;
             this.sqr.Click += new System.EventHandler(this.sqr_Click);
             // 
+            // Cube
+            // 
+            this.Cube.Location = new System.Drawing.Point(273, 376);
+            this.Cube.Name = "Cube";
+            this.Cube.Size = new System.Drawing.Size(75, 23);
+            this.Cube.TabIndex = 10;
+            this.Cube.Text = "x^3";
+            this.Cube.UseVisualStyleBackColor = true;
+            this.Cube.Click += new System.EventHandler(this.Cube_Click);
+            // 
+            // sqrt
+            // 
+            this.sqrt.Location = new System.Drawing.Point(30, 427);
+            this.sqrt.Name = "sqrt";
+            this.sqrt.Size = new System.Drawing.Size(75, 23);
+            this.sqrt.TabIndex = 11;
+            this.sqrt.Text = "x^(1/2)";
+            this.sqrt.UseVisualStyleBackColor = true;
+            this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
+            // 
+            // lg
+            // 
+            this.lg.Location = new System.Drawing.Point(111, 427);
+            this.lg.Name = "lg";
+            this.lg.Size = new System.Drawing.Size(75, 23);
+            this.lg.TabIndex = 12;
+            this.lg.Text = "lg";
+            this.lg.UseVisualStyleBackColor = true;
+            this.lg.Click += new System.EventHandler(this.lg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 494);
+            this.Controls.Add(this.lg);
+            this.Controls.Add(this.sqrt);
+            this.Controls.Add(this.Cube);
             this.Controls.Add(this.sqr);
             this.Controls.Add(this.power);
             this.Controls.Add(this.pow);
@@ -165,6 +201,9 @@
         private System.Windows.Forms.Button pow;
         private System.Windows.Forms.Button power;
         private System.Windows.Forms.Button sqr;
+        private System.Windows.Forms.Button Cube;
+        private System.Windows.Forms.Button sqrt;
+        private System.Windows.Forms.Button lg;
     }
 }
 

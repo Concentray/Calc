@@ -60,9 +60,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinaryOperations\Substracter.cs" />
+    <Compile Include="SignleOperations\Cube.cs" />
+    <Compile Include="SignleOperations\lg.cs" />
     <Compile Include="SignleOperations\SingleOperationsFactory.cs" />
     <Compile Include="SignleOperations\ISingleOperation.cs" />
     <Compile Include="SignleOperations\sqr.cs" />
+    <Compile Include="SignleOperations\Sqrt.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
