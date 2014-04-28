@@ -20,6 +20,12 @@ namespace Calculator.SignleOperations
                     return new lg();
                 case "ln":
                     return new ln();
+                case "Sin":
+                    return new Sin();
+                case "Cos":
+                    return new Cos();
+                case "Tg":
+                    return new Tg();
                 default:
                     throw new ArgumentException("Незивестный калькулятор","calc");
                 }

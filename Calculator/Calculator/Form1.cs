@@ -99,5 +99,20 @@ namespace Calculator
             SignleCalculate("ln");
         }
 
+        private void Sin_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("Sin");
+        }
+
+        private void Cos_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("Cos");
+        }
+
+        private void Tg_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("Tg");
+        }
+
     }
 }

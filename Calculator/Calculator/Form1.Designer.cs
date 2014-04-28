@@ -44,9 +44,9 @@
             this.Percent = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.Button();
             this.ln = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Sin = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
+            this.Tg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusOper
@@ -200,41 +200,44 @@
             this.ln.UseVisualStyleBackColor = true;
             this.ln.Click += new System.EventHandler(this.ln_Click);
             // 
-            // button1
+            // Sin
             // 
-            this.button1.Location = new System.Drawing.Point(273, 266);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Sin.Location = new System.Drawing.Point(273, 266);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(75, 23);
+            this.Sin.TabIndex = 16;
+            this.Sin.Text = "Sin";
+            this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.Sin_Click);
             // 
-            // button4
+            // Cos
             // 
-            this.button4.Location = new System.Drawing.Point(191, 426);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Cos.Location = new System.Drawing.Point(191, 426);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(75, 23);
+            this.Cos.TabIndex = 17;
+            this.Cos.Text = "Cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.Cos_Click);
             // 
-            // button5
+            // Tg
             // 
-            this.button5.Location = new System.Drawing.Point(272, 425);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Tg.Location = new System.Drawing.Point(272, 425);
+            this.Tg.Name = "Tg";
+            this.Tg.Size = new System.Drawing.Size(75, 23);
+            this.Tg.TabIndex = 18;
+            this.Tg.Text = "Tg";
+            this.Tg.UseVisualStyleBackColor = true;
+            this.Tg.Click += new System.EventHandler(this.Tg_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 494);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Tg);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Sin);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.log);
             this.Controls.Add(this.Percent);
@@ -276,9 +279,9 @@
         private System.Windows.Forms.Button Percent;
         private System.Windows.Forms.Button log;
         private System.Windows.Forms.Button ln;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Sin;
+        private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button Tg;
     }
 }
 
