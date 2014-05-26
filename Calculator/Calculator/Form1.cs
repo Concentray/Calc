@@ -114,5 +114,34 @@ namespace Calculator
             SignleCalculate("Tg");
         }
 
+        private void Ctg_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("Ctg");
+        }
+
+        private void x_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("x");
+        }
+
+        private void CubeRoot_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("CubeRoot");
+        }
+
+        private void Subx_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("Subx");
+        }
+
+        private void Factorial_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("Factorial");
+        }
+
+        private void Absolute_Click(object sender, EventArgs e)
+        {
+            SignleCalculate("Abso");
+        }
     }
 }

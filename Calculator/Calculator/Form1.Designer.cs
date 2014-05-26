@@ -47,6 +47,12 @@
             this.Sin = new System.Windows.Forms.Button();
             this.Cos = new System.Windows.Forms.Button();
             this.Tg = new System.Windows.Forms.Button();
+            this.Ctg = new System.Windows.Forms.Button();
+            this.x = new System.Windows.Forms.Button();
+            this.CubeRoot = new System.Windows.Forms.Button();
+            this.Subx = new System.Windows.Forms.Button();
+            this.Factorial = new System.Windows.Forms.Button();
+            this.Absolute = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusOper
@@ -112,7 +118,7 @@
             // 
             // pow
             // 
-            this.pow.Location = new System.Drawing.Point(29, 376);
+            this.pow.Location = new System.Drawing.Point(30, 345);
             this.pow.Name = "pow";
             this.pow.Size = new System.Drawing.Size(75, 23);
             this.pow.TabIndex = 7;
@@ -122,7 +128,7 @@
             // 
             // power
             // 
-            this.power.Location = new System.Drawing.Point(110, 376);
+            this.power.Location = new System.Drawing.Point(111, 345);
             this.power.Name = "power";
             this.power.Size = new System.Drawing.Size(75, 23);
             this.power.TabIndex = 8;
@@ -132,7 +138,7 @@
             // 
             // sqr
             // 
-            this.sqr.Location = new System.Drawing.Point(192, 376);
+            this.sqr.Location = new System.Drawing.Point(192, 345);
             this.sqr.Name = "sqr";
             this.sqr.Size = new System.Drawing.Size(75, 23);
             this.sqr.TabIndex = 9;
@@ -142,7 +148,7 @@
             // 
             // Cube
             // 
-            this.Cube.Location = new System.Drawing.Point(273, 376);
+            this.Cube.Location = new System.Drawing.Point(273, 345);
             this.Cube.Name = "Cube";
             this.Cube.Size = new System.Drawing.Size(75, 23);
             this.Cube.TabIndex = 10;
@@ -152,7 +158,7 @@
             // 
             // sqrt
             // 
-            this.sqrt.Location = new System.Drawing.Point(30, 427);
+            this.sqrt.Location = new System.Drawing.Point(30, 374);
             this.sqrt.Name = "sqrt";
             this.sqrt.Size = new System.Drawing.Size(75, 23);
             this.sqrt.TabIndex = 11;
@@ -162,7 +168,7 @@
             // 
             // lg
             // 
-            this.lg.Location = new System.Drawing.Point(111, 427);
+            this.lg.Location = new System.Drawing.Point(498, 287);
             this.lg.Name = "lg";
             this.lg.Size = new System.Drawing.Size(75, 23);
             this.lg.TabIndex = 12;
@@ -172,7 +178,7 @@
             // 
             // Percent
             // 
-            this.Percent.Location = new System.Drawing.Point(30, 266);
+            this.Percent.Location = new System.Drawing.Point(111, 374);
             this.Percent.Name = "Percent";
             this.Percent.Size = new System.Drawing.Size(75, 23);
             this.Percent.TabIndex = 13;
@@ -182,7 +188,7 @@
             // 
             // log
             // 
-            this.log.Location = new System.Drawing.Point(111, 266);
+            this.log.Location = new System.Drawing.Point(498, 345);
             this.log.Name = "log";
             this.log.Size = new System.Drawing.Size(75, 23);
             this.log.TabIndex = 14;
@@ -192,7 +198,7 @@
             // 
             // ln
             // 
-            this.ln.Location = new System.Drawing.Point(192, 266);
+            this.ln.Location = new System.Drawing.Point(498, 316);
             this.ln.Name = "ln";
             this.ln.Size = new System.Drawing.Size(75, 23);
             this.ln.TabIndex = 15;
@@ -202,7 +208,7 @@
             // 
             // Sin
             // 
-            this.Sin.Location = new System.Drawing.Point(273, 266);
+            this.Sin.Location = new System.Drawing.Point(417, 287);
             this.Sin.Name = "Sin";
             this.Sin.Size = new System.Drawing.Size(75, 23);
             this.Sin.TabIndex = 16;
@@ -212,7 +218,7 @@
             // 
             // Cos
             // 
-            this.Cos.Location = new System.Drawing.Point(191, 426);
+            this.Cos.Location = new System.Drawing.Point(417, 316);
             this.Cos.Name = "Cos";
             this.Cos.Size = new System.Drawing.Size(75, 23);
             this.Cos.TabIndex = 17;
@@ -222,7 +228,7 @@
             // 
             // Tg
             // 
-            this.Tg.Location = new System.Drawing.Point(272, 425);
+            this.Tg.Location = new System.Drawing.Point(417, 345);
             this.Tg.Name = "Tg";
             this.Tg.Size = new System.Drawing.Size(75, 23);
             this.Tg.TabIndex = 18;
@@ -230,11 +236,77 @@
             this.Tg.UseVisualStyleBackColor = true;
             this.Tg.Click += new System.EventHandler(this.Tg_Click);
             // 
+            // Ctg
+            // 
+            this.Ctg.Location = new System.Drawing.Point(417, 373);
+            this.Ctg.Name = "Ctg";
+            this.Ctg.Size = new System.Drawing.Size(75, 23);
+            this.Ctg.TabIndex = 19;
+            this.Ctg.Text = "Ctg";
+            this.Ctg.UseVisualStyleBackColor = true;
+            this.Ctg.Click += new System.EventHandler(this.Ctg_Click);
+            // 
+            // x
+            // 
+            this.x.Location = new System.Drawing.Point(191, 373);
+            this.x.Name = "x";
+            this.x.Size = new System.Drawing.Size(75, 23);
+            this.x.TabIndex = 20;
+            this.x.Text = "10^x";
+            this.x.UseVisualStyleBackColor = true;
+            this.x.Click += new System.EventHandler(this.x_Click);
+            // 
+            // CubeRoot
+            // 
+            this.CubeRoot.Location = new System.Drawing.Point(272, 373);
+            this.CubeRoot.Name = "CubeRoot";
+            this.CubeRoot.Size = new System.Drawing.Size(75, 23);
+            this.CubeRoot.TabIndex = 21;
+            this.CubeRoot.Text = "x^(1/3)";
+            this.CubeRoot.UseVisualStyleBackColor = true;
+            this.CubeRoot.Click += new System.EventHandler(this.CubeRoot_Click);
+            // 
+            // Subx
+            // 
+            this.Subx.Location = new System.Drawing.Point(30, 404);
+            this.Subx.Name = "Subx";
+            this.Subx.Size = new System.Drawing.Size(75, 23);
+            this.Subx.TabIndex = 22;
+            this.Subx.Text = "1/x";
+            this.Subx.UseVisualStyleBackColor = true;
+            this.Subx.Click += new System.EventHandler(this.Subx_Click);
+            // 
+            // Factorial
+            // 
+            this.Factorial.Location = new System.Drawing.Point(110, 403);
+            this.Factorial.Name = "Factorial";
+            this.Factorial.Size = new System.Drawing.Size(75, 23);
+            this.Factorial.TabIndex = 23;
+            this.Factorial.Text = "n!";
+            this.Factorial.UseVisualStyleBackColor = true;
+            this.Factorial.Click += new System.EventHandler(this.Factorial_Click);
+            // 
+            // Absolute
+            // 
+            this.Absolute.Location = new System.Drawing.Point(191, 403);
+            this.Absolute.Name = "Absolute";
+            this.Absolute.Size = new System.Drawing.Size(75, 23);
+            this.Absolute.TabIndex = 24;
+            this.Absolute.Text = "|x|";
+            this.Absolute.UseVisualStyleBackColor = true;
+            this.Absolute.Click += new System.EventHandler(this.Absolute_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 494);
+            this.ClientSize = new System.Drawing.Size(629, 474);
+            this.Controls.Add(this.Absolute);
+            this.Controls.Add(this.Factorial);
+            this.Controls.Add(this.Subx);
+            this.Controls.Add(this.CubeRoot);
+            this.Controls.Add(this.x);
+            this.Controls.Add(this.Ctg);
             this.Controls.Add(this.Tg);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Sin);
@@ -282,6 +354,12 @@
         private System.Windows.Forms.Button Sin;
         private System.Windows.Forms.Button Cos;
         private System.Windows.Forms.Button Tg;
+        private System.Windows.Forms.Button Ctg;
+        private System.Windows.Forms.Button x;
+        private System.Windows.Forms.Button CubeRoot;
+        private System.Windows.Forms.Button Subx;
+        private System.Windows.Forms.Button Factorial;
+        private System.Windows.Forms.Button Absolute;
     }
 }
 

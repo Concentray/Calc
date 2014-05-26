@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing.Drawing2D;
+using System.Security.Cryptography.X509Certificates;
 using Calculator.SingleOperations;
 
 namespace Calculator.SignleOperations
@@ -26,6 +28,18 @@ namespace Calculator.SignleOperations
                     return new Cos();
                 case "Tg":
                     return new Tg();
+                case "Ctg":
+                    return new Ctg();
+                case "x":
+                    return new x();
+                case "CubeRoot":
+                    return new CubeRoot();
+                case "Subx":
+                    return new Subx();
+                case "Factorial":
+                    return new Factorial();
+                case "Abso":
+                    return new Abso();
                 default:
                     throw new ArgumentException("Незивестный калькулятор","calc");
                 }
