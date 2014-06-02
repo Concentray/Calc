@@ -78,6 +78,8 @@
     <Compile Include="SignleOperations\Subx.cs" />
     <Compile Include="SignleOperations\Tg.cs" />
     <Compile Include="SignleOperations\x.cs" />
+    <Compile Include="Sorts\ISort.cs" />
+    <Compile Include="Sorts\SortOperationFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
